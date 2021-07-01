@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cases_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_cases_text"
+        app:layout_constraintTop_toTopOf="@id/tv_cases_text" />
+
+    <TextView
+        android:id="@+id/tv_today_cases_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today_cases"
+        app:layout_constraintStart_toEndOf="@id/tv_cases"
+        app:layout_constraintTop_toTopOf="@id/tv_cases" />
+
+    <TextView
+        android:id="@+id/tv_today_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_today_cases_text"
+        app:layout_constraintTop_toTopOf="@id/tv_today_cases_text" />
+
+    <TextView
+        android:id="@+id/tv_deaths_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deathes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_cases_text" />
+
+    <TextView
+        android:id="@+id/tv_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_deaths_text"
+        app:layout_constraintTop_toTopOf="@id/tv_deaths_text" />
+
+    <TextView
+        android:id="@+id/tv_today_deaths_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today_deathes"
+        app:layout_constraintStart_toEndOf="@id/tv_deaths"
+        app:layout_constraintTop_toTopOf="@id/tv_deaths" />
+
+    <TextView
+        android:id="@+id/tv_today_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_today_deaths_text"
+        app:layout_constraintTop_toTopOf="@id/tv_today_deaths_text" />
+
+    <TextView
+        android:id="@+id/tv_recovered_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recovered"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_deaths_text" />
+
+    <TextView
+        android:id="@+id/tv_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_recovered_text"
+        app:layout_constraintTop_toTopOf="@id/tv_recovered_text" />
+
+    <TextView
+        android:id="@+id/tv_today_recovered_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today_recovered"
+        app:layout_constraintStart_toEndOf="@id/tv_recovered"
+        app:layout_constraintTop_toTopOf="@id/tv_recovered" />
+
+    <TextView
+        android:id="@+id/tv_today_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_today_recovered_text"
+        app:layout_constraintTop_toTopOf="@id/tv_today_recovered_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_countries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recovered_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

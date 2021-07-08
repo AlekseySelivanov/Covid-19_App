@@ -19,6 +19,7 @@ import javax.inject.Singleton
         ApiModule::class,
         RepoModule::class,
         ImageModule::class,
+        CacheModule::class,
         UiModule::class,
         MainModule::class
     ]

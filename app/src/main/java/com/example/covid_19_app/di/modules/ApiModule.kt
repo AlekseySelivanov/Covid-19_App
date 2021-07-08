@@ -1,6 +1,9 @@
 package com.example.covid_19_app.di.modules
 
+import android.content.Context
 import com.example.covid_19_app.mvp.model.api.IDataSource
+import com.example.covid_19_app.mvp.model.network.NetworkStatus
+import com.example.covid_19_app.ui.network.AndroidNetworkStatus
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -30,4 +33,8 @@ class ApiModule {
         .addConverterFactory(GsonConverterFactory.create(gson))
         .build()
         .create(IDataSource::class.java)
+
+    @Singleton
+    @Provides
+    fun networkStatus(context: Context): NetworkStatus = AndroidNetworkStatus(context)
 }

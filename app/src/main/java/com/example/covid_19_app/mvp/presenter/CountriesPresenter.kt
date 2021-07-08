@@ -1,7 +1,7 @@
 package com.example.covid_19_app.mvp.presenter
 
-import com.example.covid_19_app.mvp.model.Continent
-import com.example.covid_19_app.mvp.model.Country
+import com.example.covid_19_app.mvp.model.entity.Continent
+import com.example.covid_19_app.mvp.model.entity.Country
 import com.example.covid_19_app.mvp.model.repo.ContinentsRepo
 import com.example.covid_19_app.mvp.view.CountriesView
 import com.example.covid_19_app.mvp.view.CountryItemView

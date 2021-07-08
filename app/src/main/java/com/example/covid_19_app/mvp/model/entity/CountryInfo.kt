@@ -1,4 +1,4 @@
-package com.example.covid_19_app.mvp.model
+package com.example.covid_19_app.mvp.model.entity
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

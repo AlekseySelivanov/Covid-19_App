@@ -82,4 +82,9 @@ dependencies {
 
     kapt "com.google.dagger:dagger-compiler:2.35.1"
     kapt "com.google.dagger:dagger-android-processor:2.35.1"
+
+    //Fragment
+    debugImplementation 'androidx.fragment:fragment-testing:1.3.6'
+    //RecyclerView
+    debugImplementation 'androidx.test.espresso:espresso-contrib:3.4.0'
 }
